@@ -163,7 +163,7 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap');
 
 * {
   box-sizing: border-box;
@@ -171,13 +171,13 @@ export default {
 
 body {
   margin: 0;
-  background: #0b0d12;
-  color: #ffffff;
-  font-family: 'DM Sans', sans-serif;
+  background: #f5f3ed;
+  color: #202c25;
+  font-family: 'Manrope', sans-serif;
 }
 
 button {
-  font-family: inherit;
+  font-family: 'Manrope', sans-serif;
 }
 
 .app {
@@ -185,19 +185,20 @@ button {
 }
 
 .header {
-  height: 25px;
+  height: 85px;
   padding: 0 8%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #242630;
+  background: #fffefa;
+  border-bottom: 1px solid #e9e6dc;
 }
 
 .logo {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color:yellowgreen;
+  font-family: 'Playfair Display', serif;
+  font-size: 29px;
+  font-weight: 800;
+  color: #245c43;
   letter-spacing: 1px;
 }
 
@@ -205,45 +206,49 @@ button {
 .count {
   font-size: 11px;
   letter-spacing: 2px;
-  color: #888a9b;
+  color: #888e85;
+  font-weight: 700;
 }
 
 .container {
-  max-width: 1250px;
+  max-width: 1300px;
   margin: auto;
-  padding: 65px 30px;
+  padding: 75px 35px;
 }
 
 .hero {
-  margin-bottom: 55px;
+  margin-bottom: 60px;
 }
 
 .eyebrow {
   font-size: 11px;
-  color: #a78bfa;
-  letter-spacing: 2px;
-  font-weight: 700;
+  color: #b47a46;
+  letter-spacing: 3px;
+  font-weight: 800;
 }
 
 .hero h1 {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: clamp(42px, 7vw, 72px);
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(45px, 7vw, 76px);
   margin: 15px 0;
+  color: #20392b;
+  line-height: 1.15;
 }
 
 .hero h1 span {
-  color: #a78bfa;
+  color: #b47a46;
 }
 
 .subtitle {
-  color: #9698a7;
+  color: #858a80;
   font-size: 15px;
+  line-height: 1.8;
 }
 
 .music-layout {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  gap: 35px;
+  gap: 40px;
 }
 
 .section-heading {
@@ -254,9 +259,10 @@ button {
 }
 
 .section-heading h2 {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 23px;
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
   margin: 5px 0;
+  color: #20392b;
 }
 
 .side-section {
@@ -266,19 +272,21 @@ button {
 }
 
 .playlist-panel {
-  background: #151720;
-  padding: 25px;
-  border-radius: 18px;
-  border: 1px solid #292b38;
+  background: #fffefa;
+  padding: 28px;
+  border-radius: 20px;
+  border: 1px solid #e9e6dc;
+  box-shadow: 0 8px 30px #263b2810;
 }
 
 footer {
   text-align: center;
-  color: #686a78;
+  color: #92968c;
   font-size: 10px;
   letter-spacing: 2px;
   padding: 35px;
-  border-top: 1px solid #242630;
+  border-top: 1px solid #e9e6dc;
+  background: #fffefa;
 }
 
 @media (max-width: 850px) {
@@ -288,6 +296,10 @@ footer {
 
   .container {
     padding: 40px 20px;
+  }
+
+  .header {
+    padding: 0 20px;
   }
 }
 </style>
