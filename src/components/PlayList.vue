@@ -61,14 +61,14 @@ export default {
 .playlist {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 13px;
 }
 
 .empty-message {
   text-align: center;
-  color: #85879a;
+  color: #92968c;
   line-height: 2;
-  padding: 25px 5px;
+  padding: 30px 5px;
   font-size: 13px;
 }
 
@@ -76,16 +76,22 @@ export default {
   display: flex;
   align-items: center;
   gap: 12px;
-  background: #202230;
-  padding: 10px;
-  border-radius: 10px;
+  background: #f5f3ed;
+  padding: 12px;
+  border-radius: 13px;
+  transition: 0.3s;
+}
+
+.playlist-song:hover {
+  background: #eaece3;
+  transform: translateX(3px);
 }
 
 .playlist-song img {
-  width: 45px;
-  height: 45px;
+  width: 52px;
+  height: 52px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .song-info {
@@ -94,13 +100,15 @@ export default {
 }
 
 .song-info h4 {
+  font-family: 'Playfair Display', serif;
+  color: #20392b;
   margin: 0 0 5px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .song-info p {
   margin: 0;
-  color: #85879a;
+  color: #858a80;
   font-size: 11px;
 }
 
@@ -109,15 +117,25 @@ export default {
   border: none;
   cursor: pointer;
   background: transparent;
-  font-size: 16px;
+  font-size: 17px;
+  transition: 0.2s;
 }
 
 .play-button {
-  color: #a78bfa;
+  color: #245c43;
+}
+
+.play-button:hover {
+  color: #b47a46;
+  transform: scale(1.2);
 }
 
 .remove-button {
-  color: #ff7777;
-  font-size: 22px;
+  color: #c46e61;
+  font-size: 23px;
+}
+
+.remove-button:hover {
+  transform: scale(1.2);
 }
 </style>

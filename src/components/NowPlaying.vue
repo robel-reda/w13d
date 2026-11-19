@@ -47,17 +47,18 @@ export default {
 
 <style scoped>
 .now-playing {
-  background: linear-gradient(145deg, #24203a, #171824);
-  border: 1px solid #39304f;
-  border-radius: 18px;
-  padding: 25px;
+  background: #245c43;
+  border-radius: 22px;
+  padding: 30px;
+  color: white;
+  box-shadow: 0 15px 35px #245c4325;
 }
 
 .eyebrow {
-  color: #a78bfa;
+  color: #d6bd91;
   font-size: 11px;
-  letter-spacing: 2px;
-  font-weight: 700;
+  letter-spacing: 3px;
+  font-weight: 800;
 }
 
 .playing-content {
@@ -65,36 +66,38 @@ export default {
 }
 
 .playing-content img {
-  width: 180px;
-  height: 180px;
+  width: 210px;
+  height: 210px;
   object-fit: cover;
-  border-radius: 15px;
-  margin: 15px auto;
-  box-shadow: 0 12px 35px #0008;
+  border-radius: 18px;
+  margin: 20px auto;
+  box-shadow: 0 15px 35px #102d1e70;
 }
 
 .playing-content h2 {
-  font-size: 21px;
-  margin-bottom: 5px;
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  margin-bottom: 7px;
+  color: #fffefa;
 }
 
 .playing-content p,
 .no-song p {
-  color: #aaaabd;
+  color: #d0ded4;
   font-size: 13px;
 }
 
 .music-progress {
   height: 5px;
-  background: #454154;
+  background: #648873;
   border-radius: 10px;
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 .progress {
   width: 35%;
   height: 100%;
-  background: #a78bfa;
+  background: #e4bd83;
   border-radius: 10px;
 }
 
@@ -102,7 +105,7 @@ export default {
   display: flex;
   justify-content: space-between;
   font-size: 10px;
-  color: #aaaabd;
+  color: #d0ded4;
   margin-top: 10px;
 }
 
@@ -111,32 +114,40 @@ export default {
   align-items: center;
   justify-content: center;
   gap: 35px;
-  margin-top: 25px;
-  color: #aaaabd;
+  margin-top: 30px;
+  color: #e4bd83;
 }
 
 .main-play {
-  background: #a78bfa;
-  color: #111;
+  background: #e4bd83;
+  color: #20392b;
   border: none;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  font-size: 18px;
+  width: 55px;
+  height: 55px;
+  font-size: 19px;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.main-play:hover {
+  transform: scale(1.1);
+  background: white;
 }
 
 .no-song {
   text-align: center;
-  padding: 25px 5px;
+  padding: 35px 5px;
 }
 
 .music-icon {
-  font-size: 55px;
-  color: #a78bfa;
+  font-size: 65px;
+  color: #e4bd83;
 }
 
 .no-song h3 {
-  font-size: 17px;
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: white;
 }
 </style>
