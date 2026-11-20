@@ -163,7 +163,7 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap');
 
 * {
   box-sizing: border-box;
@@ -171,135 +171,25 @@ export default {
 
 body {
   margin: 0;
-  background: #f5f3ed;
-  color: #202c25;
-  font-family: 'Manrope', sans-serif;
+  background: #0b0b0d;
+  color: #f5f0e6;
+  font-family: 'DM Sans', sans-serif;
+}
+
+#app {
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
 }
 
 button {
-  font-family: 'Manrope', sans-serif;
+  font-family: inherit;
 }
 
-.app {
-  min-height: 100vh;
-}
-
-.header {
-  height: 85px;
-  padding: 0 8%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #fffefa;
-  border-bottom: 1px solid #e9e6dc;
-}
-
-.logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 29px;
-  font-weight: 800;
-  color: #245c43;
-  letter-spacing: 1px;
-}
-
-.header-label,
-.count {
-  font-size: 11px;
-  letter-spacing: 2px;
-  color: #888e85;
-  font-weight: 700;
-}
-
-.container {
-  max-width: 1300px;
-  margin: auto;
-  padding: 75px 35px;
-}
-
-.hero {
-  margin-bottom: 60px;
-}
-
-.eyebrow {
-  font-size: 11px;
-  color: #b47a46;
-  letter-spacing: 3px;
-  font-weight: 800;
-}
-
-.hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(45px, 7vw, 76px);
-  margin: 15px 0;
-  color: #20392b;
-  line-height: 1.15;
-}
-
-.hero h1 span {
-  color: #b47a46;
-}
-
-.subtitle {
-  color: #858a80;
-  font-size: 15px;
-  line-height: 1.8;
-}
-
-.music-layout {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 40px;
-}
-
-.section-heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 25px;
-}
-
-.section-heading h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 28px;
-  margin: 5px 0;
-  color: #20392b;
-}
-
-.side-section {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.playlist-panel {
-  background: #fffefa;
-  padding: 28px;
-  border-radius: 20px;
-  border: 1px solid #e9e6dc;
-  box-shadow: 0 8px 30px #263b2810;
-}
-
-footer {
-  text-align: center;
-  color: #92968c;
-  font-size: 10px;
-  letter-spacing: 2px;
-  padding: 35px;
-  border-top: 1px solid #e9e6dc;
-  background: #fffefa;
-}
-
-@media (max-width: 850px) {
-  .music-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .container {
-    padding: 40px 20px;
-  }
-
-  .header {
-    padding: 0 20px;
-  }
+img {
+  display: block;
 }
 </style>
