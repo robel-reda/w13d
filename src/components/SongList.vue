@@ -44,78 +44,56 @@ export default {
 
 <style scoped>
 .song-list {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
 }
 
 .song-card {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  background: #fffefa;
-  padding: 15px;
-  border: 1px solid #ebe8df;
+  background: #17171b;
+  border: 1px solid #302b22;
   border-radius: 16px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px #263b2808;
+  padding: 14px;
+  transition: 0.3s ease;
 }
 
 .song-card:hover {
-  transform: translateY(-4px);
-  border-color: #a6bca9;
-  box-shadow: 0 12px 25px #263b2815;
+  transform: translateY(-7px);
+  border-color: #d6b36a;
+  box-shadow: 0 12px 30px #0008;
 }
 
 .song-card img {
-  width: 72px;
-  height: 72px;
+  width: 100%;
+  aspect-ratio: 1;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 11px;
 }
 
-.song-info {
-  flex: 1;
-  min-width: 0;
-}
-
-.song-info h3 {
-  font-family: 'Playfair Display', serif;
+.song-card h3 {
+  color: #f5f0e6;
   font-size: 17px;
-  color: #20392b;
-  margin: 0 0 6px;
+  margin: 14px 0 5px;
 }
 
-.song-info p {
-  color: #777f76;
-  font-size: 12px;
-  margin: 0 0 5px;
+.song-card p {
+  color: #96939a;
+  font-size: 13px;
 }
 
-.song-info small {
-  color: #aaa99d;
-  font-size: 10px;
-}
-
-.duration {
-  font-size: 11px;
-  color: #858a80;
-}
-
-.add-button {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+.song-card button {
+  width: 100%;
+  background: #d6b36a;
+  color: #111;
   border: none;
-  background: #245c43;
-  color: white;
-  font-size: 23px;
+  border-radius: 8px;
+  padding: 11px;
+  font-weight: 700;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
-.add-button:hover {
-  background: #b47a46;
-  transform: rotate(90deg);
+.song-card button:hover {
+  background: #f0d18f;
 }
 </style>
